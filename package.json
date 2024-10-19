@@ -1,0 +1,20 @@
+{
+  "name": "@burmajs/url-parser",
+  "version": "1.0.0",
+  "exports": {
+    "types": "./index.d.ts",
+    "import": "./index.mjs",
+    "require": "./index.js"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "description": "Parse req.url of http.IncomingMessage",
+  "devDependencies": {
+    "@types/node": "^22.7.7",
+    "typescript": "^5.6.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/burmajs/url-parser.git"
+  }
+}

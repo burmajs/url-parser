@@ -1,10 +1,11 @@
 {
   "name": "@burmajs/url-parser",
   "version": "1.0.0",
+  "type": "module",
   "exports": {
     "types": "./index.d.ts",
-    "import": "./index.mjs",
-    "require": "./index.js"
+    "import": "./index.js",
+    "require": "./index.cjs"
   },
   "author": "",
   "license": "Apache-2.0",

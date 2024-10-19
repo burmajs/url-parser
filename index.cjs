@@ -1,6 +1,5 @@
-import * as qs from "node:querystring";
-import * as http from "node:http";
-
+const qs = require("node:querystring");
+const http = require("node:http");
 /**
  * @typedef ParsedUrl
  * @property {string} pathname
@@ -36,4 +35,4 @@ function urlParser(request) {
   return (parsedUrl = { pathname, query, rawUrl, search, getParam });
 }
 
-export default urlParser;
+module.exports = urlParser;

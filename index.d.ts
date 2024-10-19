@@ -6,6 +6,7 @@ export type ParsedUrl = {
   rawUrl: string;
   search: string;
   query: qs.ParsedUrlQuery;
+  getParam: (key: string) => string | string[];
 };
 
 declare function urlParser(request: http.IncomingMessage): ParsedUrl;

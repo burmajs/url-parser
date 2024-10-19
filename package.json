@@ -3,9 +3,12 @@
   "version": "1.0.1",
   "type": "module",
   "exports": {
-    "types": "./index.d.ts",
-    "import": "./index.js",
-    "require": "./index.cjs"
+    "./package.json": "./package.json",
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.js",
+      "require": "./index.cjs"
+    }
   },
   "author": "",
   "license": "Apache-2.0",

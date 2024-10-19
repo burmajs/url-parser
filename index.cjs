@@ -34,5 +34,4 @@ function urlParser(request) {
   const getParam = (key) => query[key] ?? "";
   return (parsedUrl = { pathname, query, rawUrl, search, getParam });
 }
-
 module.exports = urlParser;

@@ -6,7 +6,6 @@ const http = require("node:http");
  * @property {string} rawUrl
  * @property {string} search
  * @property {qs.ParsedUrlQuery} query
- * @property {(key:string)=> string | string[]} getParam
  */
 
 /**
@@ -26,12 +25,6 @@ function urlParser(request) {
   let [pathname, search] = rawUrl.split("?", 2);
   if (!search) search = "";
   const query = search ? JSON.parse(JSON.stringify(qs.parse(search))) : {};
-  /**
-   *
-   * @param {string} key
-   * @returns {string | string[]}
-   */
-  const getParam = (key) => query[key] ?? "";
-  return (parsedUrl = { pathname, query, rawUrl, search, getParam });
+  return (parsedUrl = { pathname, query, rawUrl, search });
 }
-module.exports = urlParser;
+exports = urlParser;

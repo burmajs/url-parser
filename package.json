@@ -3,14 +3,18 @@
   "version": "1.0.3",
   "type": "module",
   "exports": {
-    "./package.json": "./package.json",
     ".": {
-      "types": "./index.d.cts",
-      "import": "./index.mjs",
-      "require": "./index.cjs"
+      "import": {
+        "types": "./index.d.ts",
+        "default": "./index.js"
+      },
+      "require": {
+        "types": "./index.d.cts",
+        "default": "./index.cjs"
+      }
     }
   },
-  "author": "",
+  "author": "Burmajs",
   "license": "Apache-2.0",
   "description": "Parse req.url of http.IncomingMessage",
   "devDependencies": {

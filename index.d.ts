@@ -8,6 +8,6 @@ export type ParsedUrl = {
   query: qs.ParsedUrlQuery;
 };
 
-export default function urlParser(request: http.IncomingMessage): ParsedUrl;
+declare function urlParser(request: http.IncomingMessage): ParsedUrl;
 
-export = urlParser;
+export default urlParser;

@@ -27,4 +27,5 @@ function urlParser(request) {
   const query = search ? JSON.parse(JSON.stringify(qs.parse(search))) : {};
   return (parsedUrl = { pathname, query, rawUrl, search });
 }
+module.exports = urlParser;
 exports = urlParser;

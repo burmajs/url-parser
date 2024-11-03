@@ -26,7 +26,6 @@ http
       res.end(
         JSON.stringify({
           parseedUrl,
-          user: parseedUrl.getParam("user"),
         })
       );
     }
@@ -34,7 +33,7 @@ http
   .listen(3000);
 
 /*
-  {
+ {
   "parseedUrl": {
     "pathname": "/foo/bar",
     "query": {
@@ -43,9 +42,8 @@ http
     },
     "rawUrl": "/foo/bar?user=foo&pass=bar",
     "search": "user=foo&pass=bar"
-  },
-  "user": "foo"
-   }
+  }
+}
 */
 ```
 
@@ -63,7 +61,6 @@ http
       res.end(
         JSON.stringify({
           parseedUrl,
-          user: parseedUrl.getParam("user"),
         })
       );
     }
@@ -80,8 +77,7 @@ http
     },
     "rawUrl": "/foo/bar?user=foo&pass=bar",
     "search": "user=foo&pass=bar"
-  },
-  "user": "foo"
-   }
+  }
+}
 */
 ```
